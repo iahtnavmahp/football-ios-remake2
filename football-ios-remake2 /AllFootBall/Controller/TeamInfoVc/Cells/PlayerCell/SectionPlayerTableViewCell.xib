@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="SectionPlayerTableViewCell" customModule="AllFootBall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="rtE-iM-Myh">
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="70"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a22-qx-bWH">
+                        <rect key="frame" x="20" y="10" width="395" height="41"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rtE-iM-Myh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8a5-8n-zau"/>
+                    <constraint firstAttribute="bottom" secondItem="rtE-iM-Myh" secondAttribute="bottom" id="AZ4-6H-MGX"/>
+                    <constraint firstItem="rtE-iM-Myh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cwl-Pw-s4e"/>
+                    <constraint firstItem="a22-qx-bWH" firstAttribute="width" secondItem="rtE-iM-Myh" secondAttribute="width" multiplier="0.908046" id="Uvh-gl-8Hc"/>
+                    <constraint firstItem="a22-qx-bWH" firstAttribute="height" secondItem="rtE-iM-Myh" secondAttribute="height" multiplier="0.585714" id="nnH-eL-5Ul"/>
+                    <constraint firstItem="a22-qx-bWH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qpR-ZN-w0q"/>
+                    <constraint firstItem="a22-qx-bWH" firstAttribute="centerX" secondItem="rtE-iM-Myh" secondAttribute="centerX" id="xg2-Rz-u8K"/>
+                    <constraint firstAttribute="trailing" secondItem="rtE-iM-Myh" secondAttribute="trailing" id="yHV-hE-m7b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgType" destination="rtE-iM-Myh" id="bsQ-4e-0wX"/>
+                <outlet property="lblNameSection" destination="a22-qx-bWH" id="Y5q-ie-MSC"/>
+            </connections>
+            <point key="canvasLocation" x="221.01449275362322" y="56.919642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 36" width="317" height="58"/>
+    </resources>
+</document>
